@@ -1,4 +1,4 @@
-# Build fairseq2 on Mac M2
+# Build fairseq2 on Mac M2 / Intel 
 Check the build scripts first.
 
 There are two scripts.
@@ -9,9 +9,13 @@ Run this inside the conda environment
 
 Be patient, this takes some time. 
 
+# Build fairseq2 on Mac
 ```
 ./make-env-mac.sh
 conda activate fairseq2 
 ./build-fairseq2.sh 
 ```
-
+# Check if fairseq2 is installed 
+```
+pip3 list | grep fairseq2
+```

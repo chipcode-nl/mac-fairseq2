@@ -39,7 +39,7 @@ fi
 export CONDA_BUILD_SYSROOT=$(xcrun --show-sdk-path)
 pip3 install torch -r fairseq2/fairseq2n/python/requirements-build.txt
 cd fairseq2/fairseq2n
-cmake -GNinja -B build
+cmake -GNinja -DFAIRSEQ2N_INSTALL_STANDALONE=ON -B build
 cmake --build build
 cd python
 export FAIRSEQ2N_DEVEL=1 
